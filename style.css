@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #2c2c2c, #1a1a1a); /* dark metallic background */
+}
+
+.calculator {
+  background: linear-gradient(145deg, #d4af37, #b8860b); /* gold frame */
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+#display {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 15px;
+  padding: 8px;
+  font-size: 1.4rem;
+  text-align: right;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #f0f0f0, #c0c0c0); /* silver display */
+  color: #222;
+  box-shadow: inset 2px 2px 6px rgba(0,0,0,0.3);
+  pointer-events: auto;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 70px);
+  gap: 12px;
+}
+
+button {
+  width: 100%;
+  height: 55px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #444, #222); /* metallic buttons */
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 3px 3px 8px rgba(0,0,0,0.5);
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background: linear-gradient(145deg, #666, #333);
+  transform: translateY(-2px);
+}
+
+.clear {
+  background: linear-gradient(145deg, #b22222, #8b0000); /* red for clear */
+  color: white;
+}
+
+.equal {
+  grid-column: span 2;
+  background: linear-gradient(145deg, #ff8c00, #ff4500); /* orange highlight for equals */
+  color: white;
+}
+
+
+
+
+
+
+  
